@@ -7,7 +7,7 @@ we will explore options that allow us to recover imatinib.
 First let's look at the distribution of score and ligand efficiency
 (score diveded by number of non-hydrogen atoms).
 ```
-rt_process_vs.py read -i vs_adgpu.db --plot
+rt_process_vs read -i vs_adgpu.db --plot
 ```
 This creates a file named "scatter.png".
 It can be visualized using a file browser.
@@ -16,7 +16,7 @@ It can be visualized using a file browser.
 
 ```
 mkdir passed
-rt_process_vs.py read -i vs_adgpu.db -e -11 -sdf passed/
+rt_process_vs read -i vs_adgpu.db -e -11 -sdf passed/
 pymol tutorials/imatinib/step-2/2hzn_A.pdb rec_3oxz_rigid.pdbqt xray-imatinib.pdb passed/*
 ```
 

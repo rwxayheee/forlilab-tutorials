@@ -22,12 +22,12 @@ mkdir vs_vina
 
 Use ringtail script to assemble results into sqlite database file
 ```
-rt_process_vs.py write -o vs_adgpu.db -fp vs_adgpu/
+rt_process_vs write -o vs_adgpu.db -fp mols_pdbqt/vs_adgpu*
 ```
 
 With vina, we tell it to add interactions (`-ai`) with the receptor file (`-rf`)
 ```
-rt_process_vs.py write -o vs_vina.db -fp vs_vina/ -m vina -ai -rf rec_3oxz_rot315_rigid.pdbqt
+rt_process_vs write -o vs_vina.db -fp vs_vina/ -m vina -ai -rf rec_3oxz_rot315_rigid.pdbqt
 ```
 
 For the next step, we will use a `.db` file that contains AutoDock-GPU results.
