@@ -17,7 +17,7 @@ mkdir vs_adgpu
 Or With vina
 ```
 mkdir vs_vina
-~/vina_1.2.5_linux_x86_64 --scoring ad4 --maps rec_3oxz_rot315_rigid --flex rec_3oxz_rot315_flex.pdbqt --batch mols_pdbqt/*.pdbqt --dir vs_vina/
+./vina_1.2.5_linux_x86_64 --scoring ad4 --maps rec_3oxz_rot315_rigid --flex rec_3oxz_rot315_flex.pdbqt --batch mols_pdbqt/*.pdbqt --dir vs_vina/
 ```
 
 Use ringtail script to assemble results into sqlite database file
